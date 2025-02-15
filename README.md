@@ -19,7 +19,7 @@ We can already set up all devices, but we will only connect Router Left and Rout
 We will connect Router Right to Router Middle only after we configure static routing between Router Left and Router Middle.
 
 
-![Preparation](https://github.com/user-attachments/assets/2bcb8a41-bc86-4cde-b5c2-ead35990f1bd)
+![Preparation](Preparation.png)
 
 
 
