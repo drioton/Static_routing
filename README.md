@@ -18,7 +18,7 @@ wenn wir das statische Routing zwischen Router Left und Router Middle konfigurie
 We can already set up all devices, but we will only connect Router Left and Router Middle.
 We will connect Router Right to Router Middle only after we configure static routing between Router Left and Router Middle.
 
-![Preparation](/Images/Preparation.png)
+![Preparation](Preparation.png)
 
 
 
