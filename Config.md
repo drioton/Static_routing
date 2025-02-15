@@ -36,10 +36,10 @@ exit
 **Router Left**
 
 ```
-show ip route   #checking routing Table
+show ip route   # checking routing Table
 configure terminal
 ip route 192.168.2.0 255.255.255.0 1.0.0.2 
-# Das Hinzufügen eines weiteren Netzwerks. Das erste ist das Netzwerk, das wir mit der Maske hinzufügen möchten, und das nächste Netzwerk ist der nächste Hop, an den unser Router Left senden wird.
+/* Das Hinzufügen eines weiteren Netzwerks. Das erste ist das Netzwerk, das wir mit der Maske hinzufügen möchten, und das nächste Netzwerk ist der nächste Hop, an den unser Router Left senden wird.*/
 # Adding another network. The first one is the network we want to add with the subnet mask, and the next network is the next hop to which our router Left will send.
 
 
