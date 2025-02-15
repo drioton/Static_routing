@@ -12,15 +12,15 @@
 192.168.3.0/24  PC4-PC5
 ```
 ```
-Wir können jetzt bereits alle Geräte einrichten, aber wir verbinden nur Router Left und Router Middle. Router Right verbinden wir mit Router Middle erst,
+Wir können jetzt bereits alle Geräte einrichten, aber wir verbinden nur Router Left und Router Middle.
+Router Right verbinden wir mit Router Middle erst,
 wenn wir das statische Routing zwischen Router Left und Router Middle konfiguriert haben.
 
 We can already set up all devices, but we will only connect Router Left and Router Middle.
 We will connect Router Right to Router Middle only after we configure static routing between Router Left and Router Middle.
 ```
 
-[Preparation.png](images/Preparation.png)
-
+([images/Preparation.png](https://github.com/drioton/Static_routing/blob/a3f49b26c34350fe5547e143fba63f38a3f48853/images/Preparation.png))
 
 **Router 0 (Left)**
 
