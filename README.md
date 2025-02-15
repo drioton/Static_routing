@@ -14,10 +14,10 @@
 ```
 Wir können jetzt bereits alle Geräte einrichten, aber wir verbinden nur Router Left und Router Middle. Router Right verbinden wir mit Router Middle erst,
 wenn wir das statische Routing zwischen Router Left und Router Middle konfiguriert haben.
-
+```
 ![Preparation](imageFolder/Preparation.png)
 Images/Preparation.png
-
+```
 We can already set up all devices, but we will only connect Router Left and Router Middle.
 We will connect Router Right to Router Middle only after we configure static routing between Router Left and Router Middle.
 
