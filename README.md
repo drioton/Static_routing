@@ -21,6 +21,9 @@ We will connect Router Right to Router Middle only after we configure static rou
 ```
 images/Preparation.png
 https://github.com/drioton/Static_routing/blob/a3f49b26c34350fe5547e143fba63f38a3f48853/images/Preparation.png
+
+![Preparation](https://github.com/drioton/Static_routing/blob/main/images/Preparation.png)
+
 **Router 0 (Left)**
 
 ```
