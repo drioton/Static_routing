@@ -101,7 +101,66 @@ Approximate round trip times in milli-seconds:
 ```
 Connect together Router Middle and Router Right 
 ```
+**Router Middle**
+```
+enable
+configure terminal
+interface GigabitEthernet0/1
+ip address 2.0.0.1 255.255.255.252
+no shutdown
+exit
+```
 
+**Router Right**
+enable
+configure terminal
+hostname Right
+interface GigabitEthernet0/1
+ip address 2.0.0.2 255.255.255.252
+no shutdown
+exit
+ip address 192.168.3.1 255.255.255.0
+no shutdown
+exit
+show ip route
+```
+```
+     2.0.0.0/8 is variably subnetted, 2 subnets, 2 masks
+C       2.0.0.0/30 is directly connected, GigabitEthernet0/1
+L       2.0.0.2/32 is directly connected, GigabitEthernet0/1
+     192.168.3.0/24 is variably subnetted, 2 subnets, 2 masks
+C       192.168.3.0/24 is directly connected, GigabitEthernet0/2
+L       192.168.3.1/32 is directly connected, GigabitEthernet0/2
+```
+**Router Middle*
+
+```
+ip route 192.168.3.0 255.255.255.0 2.0.0.2
+do show ip route
+     1.0.0.0/8 is variably subnetted, 2 subnets, 2 masks
+C       1.0.0.0/30 is directly connected, GigabitEthernet0/0
+L       1.0.0.2/32 is directly connected, GigabitEthernet0/0
+     2.0.0.0/8 is variably subnetted, 2 subnets, 2 masks
+C       2.0.0.0/30 is directly connected, GigabitEthernet0/1
+L       2.0.0.1/32 is directly connected, GigabitEthernet0/1
+S    192.168.1.0/24 [1/0] via 1.0.0.1
+     192.168.2.0/24 is variably subnetted, 2 subnets, 2 masks
+C       192.168.2.0/24 is directly connected, GigabitEthernet0/2
+L       192.168.2.1/32 is directly connected, GigabitEthernet0/2
+S    192.168.3.0/24 [1/0] via 2.0.0.2
+```
+
+**Router Left**
+```
+enable
+configure terminal
+ip route 192.168.3.0 255.255.255.0 1.0.0.2
+exit
+
+Höchstens ein Hop im Netzwerk, das der Router kennt.
+
+A maximum of one hop in the network that the router knows.
+```
 
 
 
