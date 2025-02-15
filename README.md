@@ -19,7 +19,7 @@ We can already set up all devices, but we will only connect Router Left and Rout
 We will connect Router Right to Router Middle only after we configure static routing between Router Left and Router Middle.
 
 
-![Preparation](Preparation.png)
+![(Preparation.png)](https://github.com/drioton/Static_routing/blob/main/Preparation.png)
 
 
 
