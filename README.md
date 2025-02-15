@@ -1,4 +1,4 @@
-# Static_routing
+# Static_routing #
 
 ```
 3x Router
@@ -15,6 +15,7 @@
 Wir können jetzt bereits alle Geräte einrichten, aber wir verbinden nur Router Left und Router Middle. Router Right verbinden wir mit Router Middle erst,
 wenn wir das statische Routing zwischen Router Left und Router Middle konfiguriert haben.
 
+![Preparation](imageFolder/Preparation.png)
 Images/Preparation.png
 
 We can already set up all devices, but we will only connect Router Left and Router Middle.
@@ -59,9 +60,7 @@ exit
 
 
 **Router Left**
-#
-checking routing Table
-#
+
 ```
 show ip route   
 configure terminal
@@ -69,7 +68,7 @@ ip route 192.168.2.0 255.255.255.0 1.0.0.2
 ```
 Das Hinzufügen eines weiteren Netzwerks. Das erste ist das Netzwerk, das wir mit der Maske hinzufügen möchten, und das nächste Netzwerk ist der nächste Hop, an den unser Router Left senden wird.
 
-Adding another network. The first one is the network we want to add with the subnet mask, and the next network is the next hop to which our router Left will send.<
+Adding another network. The first one is the network we want to add with the subnet mask, and the next network is the next hop to which our router Left will send.
 
 **Router Middle**
 
@@ -96,8 +95,6 @@ Approximate round trip times in milli-seconds:
     Minimum = 0ms, Maximum = 0ms, Average = 0ms
 
 ```
-
-
 
 
 **Two new Network**
