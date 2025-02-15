@@ -30,11 +30,13 @@ exit
 exit
 ```
 
-** Stattic routing**
+**Static routing**
 
-```
+
 **Router Left**
-#checking routing Table
+#
+checking routing Table
+#
 ```
 show ip route   
 ```
@@ -44,6 +46,30 @@ ip route 192.168.2.0 255.255.255.0 1.0.0.2
 Das Hinzufügen eines weiteren Netzwerks. Das erste ist das Netzwerk, das wir mit der Maske hinzufügen möchten, und das nächste Netzwerk ist der nächste Hop, an den unser Router Left senden wird.
 
 Adding another network. The first one is the network we want to add with the subnet mask, and the next network is the next hop to which our router Left will send.<
+
+**Router Middle**
+```
+enable
+configure terminal
+ip route 192.168.1.0 255.255.255.0 1.0.0.1
+```
+**PC0**
+```
+C:\>ping 192.168.2.3
+
+Pinging 192.168.2.3 with 32 bytes of data:
+
+Reply from 192.168.2.3: bytes=32 time<1ms TTL=126
+Reply from 192.168.2.3: bytes=32 time<1ms TTL=126
+Reply from 192.168.2.3: bytes=32 time<1ms TTL=126
+Reply from 192.168.2.3: bytes=32 time<1ms TTL=126
+
+Ping statistics for 192.168.2.3:
+    Packets: Sent = 4, Received = 4, Lost = 0 (0% loss),
+Approximate round trip times in milli-seconds:
+    Minimum = 0ms, Maximum = 0ms, Average = 0ms
+
+```
 
 
 
