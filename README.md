@@ -185,9 +185,9 @@ ip route 1.0.0.0 255.255.255.252 2.0.0.1
 exit
 exit
 copy running-config startup-config
-
-**Control**
-```111```
+```
+#Control
+```
 Jeder Router muss alle fünf Netzwerke haben.
 Falls eines fehlt, kann es passieren, dass der Ping zwischen den PCs funktioniert,
 aber das Netzwerk selbst nicht direkt erreichbar ist.
